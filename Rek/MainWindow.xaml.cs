@@ -28,20 +28,17 @@ namespace Rek
 		private void TestRek(object sender, RoutedEventArgs e)
 		{
 			//A(4);
-			Rekurzija(3);
-			MessageBox.Show("Sve gotovo");
+			
+			MessageBox.Show(Rekurzija(3).ToString());
 		}
 
-		private void Rekurzija(int x)
+		private int Rekurzija(int x)
 		{
 			if (x > 0)
 			{
 				Rekurzija(--x);
 			}
-			else
-			{
-				MessageBox.Show("Gotovo");
-			}
+			return x;
 		}
 
 		private void A(int x)

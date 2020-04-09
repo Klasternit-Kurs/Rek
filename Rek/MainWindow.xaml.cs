@@ -34,11 +34,14 @@ namespace Rek
 
 		private int Rekurzija(int x)
 		{
-			if (x > 0)
+			if (x < 100)
 			{
-				Rekurzija(--x);
+				return Rekurzija(x+x);
 			}
-			return x;
+			else
+			{
+				return x;
+			}
 		}
 
 		private void A(int x)
